@@ -1,5 +1,5 @@
 header{
-    padding:40px 100px;
+    padding:10px 100px;
     box-sizing:border-box;
     background:#fff;
     height:100px;
@@ -55,10 +55,21 @@ color:rgba(104,104,104, .6);
 }
 
 
-#header-container{
-    background-image:url('../assets/test2.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height:400px;
-    width:100%;
+.photo-section{
+    height:600px;
+    background:linear-gradient(rgba(15, 1, 1, 0.6), rgba(10, 0, 0, 0.6)),url('../assets/purple_leaves.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+
+section.intro-section div.container{
+    padding:50px;
+    height:100%;
+}
+
+#h2-intro-section{
+    font-family:'Josefin Sans';
+    font-weight: lighter;
+    color:white;
 }
