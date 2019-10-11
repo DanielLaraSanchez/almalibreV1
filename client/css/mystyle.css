@@ -104,8 +104,8 @@ color:rgba(104,104,104, .6);
 
 }
 #intro-section-row{
-    padding-top:200px;
-    padding-bottom:200px;
+    padding-top:150px;
+    padding-bottom:150px;
 
 }
 
@@ -164,6 +164,8 @@ color:rgba(104,104,104, .6);
 
 .deseases-text{
     font-size:20px;
+    margin:0px;
+    padding:0px;
 }
 
 #blog-section{
@@ -172,8 +174,10 @@ color:rgba(104,104,104, .6);
 }
 
 #blog-section-col1{
-    background:url('../assets/blog.png');
+    background:url('../assets/blog2.png');
     background-size:contain;
     background-repeat: no-repeat;
     height:600px;
+    top:-150px;
+
 }
