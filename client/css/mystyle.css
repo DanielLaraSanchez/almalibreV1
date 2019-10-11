@@ -1,3 +1,11 @@
+body{
+    /* background:url('../assets/bublesbg.png');
+    background-size:contain;   */
+    font-family:'Josefin Sans';
+    font-weight: lighter;
+}
+
+
 header{
     padding:10px 100px;
     box-sizing:border-box;
@@ -15,6 +23,7 @@ nav{
     border-bottom: 1px solid rgba(255,255,255,.2);
     position:sticky; 
     top:0;
+    z-index: 5;
 
 }
 
@@ -50,8 +59,6 @@ a:hover {
 nav ul li a:hover
 {
 color:rgba(104,104,104, .6);
-
-
 }
 
 
@@ -62,14 +69,111 @@ color:rgba(104,104,104, .6);
     background-repeat:no-repeat;
 }
 
-
-section.intro-section div.container{
-    padding:50px;
+#photo-section-container{
     height:100%;
 }
 
-#h2-intro-section{
+#photo-section-row{
+    height:100%;
+    width:100%;
+}
+
+#photo-section-col{
+}
+
+#photo-section-col h3{
+    color:white;
+}
+
+
+
+
+.photo-section-text{
     font-family:'Josefin Sans';
     font-weight: lighter;
     color:white;
+    vertical-align: middle;
+}
+
+#intro-section{
+    /* height:600px; */
+    /* margin-bottom:100px; */
+    background:url('../assets/bublesbg4.png');
+    background-size:contain;
+
+
+}
+#intro-section-row{
+    padding-top:200px;
+    padding-bottom:200px;
+
+}
+
+#intro-section-col1{
+    background:url('../assets/magnets.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    min-height:400px;
+    width:100%;
+    /* margin-bottom:60px; */
+    margin-right:-25px;
+    
+}
+
+#intro-section-col2{
+   
+    font-family:'Josefin Sans';
+    font-weight: lighter;
+    border-left:1px solid black;
+    padding-left:50px;
+    
+}
+
+#treatments-section{
+    min-height:650px;
+    background:url('../assets/treatmentsbg2.png');
+    background-size:cover;
+    padding-top:50px;
+    padding-left:50px;
+    color:white;
+}
+
+#treatments-section-text{
+    border-bottom:2px solid white;
+    border-right:2px solid white;
+    margin-top:40px;
+}
+
+#treatments-section-col1{
+    border-top:1px solid white;
+     padding:40px;
+}
+#treatments-section-col2{
+    /* border-bottom:1px solid white; */
+     padding:40px;
+}
+#treatments-section-col3{
+    /* border-top:1px solid white; */
+     padding:40px;
+}
+
+#treatments-section-row{
+    /* background:url('../assets/treatmentsbg2.png');
+    background-size:cover; */
+}
+
+.deseases-text{
+    font-size:20px;
+}
+
+#blog-section{
+    height:800px;
+    background-color:lig;
+}
+
+#blog-section-col1{
+    background:url('../assets/blog.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    height:600px;
 }
