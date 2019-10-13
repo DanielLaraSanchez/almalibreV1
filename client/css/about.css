@@ -1,0 +1,10 @@
+body {
+    /* position: relative; */
+  }
+  ul.nav-pills {
+    top: 20px;
+position:fixed;
+  }
+  #col-treatments {
+    height: 300px;
+  }

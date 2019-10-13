@@ -5,23 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <title>Alma Libre</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/mystyle.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
 </head>
 
 <body>
+
+    
     <header><img src="./assets/almalibrelogo.png" alt="" height='80'></header>
-    <nav>
+    <nav class="topnav" id="myTopnav">
         <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Treatments</a></li>
-            <li><a href="#">Clinics</a></li>
+            <li><a href="treatments.html">Treatments</a></li>
+              <li><a href="#">Clinics</a></li>
             <li><a href="#">Contact</a></li>
+           <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a></li> 
         </ul>
     </nav>
 
@@ -41,10 +52,19 @@
         </div>
     </section>
 
+    <div class="item" data-aos="fade-up">
+
+
+
     <section id="intro-section">
         <div class="container" id="intro-section-container">
+                <div class="item" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+
             <div class="row justify-content-around" id="intro-section-row">
+
                 <div class="col-lg-5" id="intro-section-col1"></div>
+           
+
                 <div class="col-lg-6" id="intro-section-col2">
                     <h3>Biomagnetic pair therapy works at a physical, emotional and energetic level, and can be used for
                         everything from infectious diseases to mental health issues.
@@ -54,8 +74,11 @@
                         suppressed emotions and trauma, negative belief systems and thought patterns.</h3>
                 </div>
             </div>
+            </div>
         </div>
     </section>
+
+</div>
 
     <section id="treatments-section">
         <div class="container-fluid" id="treatments-section-container">
@@ -125,21 +148,90 @@
 
     <section id="blog-section">
         <div class="container-fluid" id="blog-container">
-            <div class="row">
-                   <div class="col-lg-5" id="blog-section-col1">
-                       
-                   </div>
-                   <!-- <div class="col-lg-4">
+            <div class="row justify-content-around">
+                <div class="col-lg-3">
+                    <div class="item" data-aos="fade-down">
+                        <div id="butterfly-photo"></div>
+                    </div>
+                    <div class="item" data-aos="fade-up">
+                        <h2>At Alma Libre we believe that every illness has a cause and is a call for transformation. We
+                            aim
+                            to treat the person on all levels, helping guide you on a path to wellness.</h1>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div>
+                        <div class="item" data-aos="fade-right">
+                            <div id="connection-photo" style="float:left; display:inline;width:35%;"></div>
+                        </div>
+                        <div class="item" data-aos="fade-left">
+                            <h2 style="float:left; display:inline; width:50%; " id="connection-photo-text">Physical
+                                symptoms, thoughts, beliefs, and emotions, are very much intertwined. By using various
+                                therapeutic
+                                techniques, and an awareness of this connection, we are able to break the cycle and
+                                heal.
+                            </h2>
+                        </div>
+                    </div>
 
-                   </div>
-
-                   <div class="col-lg-4">
-
-                    </div> -->
-
-
+                </div>
+            </div>
+            <div class="item" data-aos="fade-up" data-aos-duration="1000">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3">
+                        <div id="cels-photo"></div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h1>Our therapy sessions involve Biomagnetic Pair therapy and include
+                            Naturopathic advice. The result is a complete holistic treatment working at a cellular
+                            level,
+                            with advice about supplements or herbal medicine to aid the healing process. Biodecoding and
+                            emotional guidance are included where necessary. </h1>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+
+    <section id="booking-section">
+        <div class="container-fluid" id="booking-section-container">
+            <div class="row justify-content-center align-items-center" id="booking-section-row">
+                <div class="col-lg-4">
+                    <div class="jumbotron" id="booking-section-jumbotron">
+                            <!-- <h1 class="display-4">First Timer?</h1> -->
+                            <h1 class="display-4">Benefit from our free consultation</h1>
+                            <hr class="my-4" style="color:white;">
+                            <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Make An Apoinment</a>
+                          </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="footer-section">
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row copyright">
+
+                        <div class="col-md-12 text-center">
+                                <i class="fab fa-facebook block" style="font-size:25px;position:absolute;right:20px;top:35%;"></i>
+                                <i class="fab fa-twitter block" style="font-size:25px;position:absolute;right:60px;top:35%;"></i>
+
+
+
+                            <p style="padding:0px;margin:0px;">
+
+                                <small class="block" style="margin-top:5px;">AlmaLibre &copy; 2019 | All Rights Reserved.</small> 
+                                <small class="block">www.almalibre.co.uk</small>
+
+
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+        </footer>
+
     </section>
 
 
@@ -159,6 +251,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function myFunction() {
+            console.log("funciona")
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
 
 </body>
 

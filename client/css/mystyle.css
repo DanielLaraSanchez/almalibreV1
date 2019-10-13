@@ -61,9 +61,52 @@ nav ul li a:hover
 color:rgba(104,104,104, .6);
 }
 
+.topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav ul li a{
+        display: none;
+    }
+    .topnav ul li a.icon {
+      /* float: right; */
+      display: block;
+      font-size:25px;
+      right:0;
+      position: absolute;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .responsive  {
+        position: relative;
+        height:350px;
+    }
+    .responsive ul li a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .responsive ul{
+        display:block;
+        float:none;
+        margin-left:75px;
+        margin-top:50px;
+    }
+    .responsive ul li a {
+      /* float: none; */
+      display: block;
+      padding:2px;
+      /* text-align: left; */
+    }
+  }
+
 
 .photo-section{
-    height:600px;
+    height:700px;
     background:linear-gradient(rgba(15, 1, 1, 0.6), rgba(10, 0, 0, 0.6)),url('../assets/purple_leaves.jpg');
     background-size:cover;
     background-repeat:no-repeat;
@@ -104,8 +147,8 @@ color:rgba(104,104,104, .6);
 
 }
 #intro-section-row{
-    padding-top:150px;
-    padding-bottom:150px;
+    padding-top:200px;
+    padding-bottom:200px;
 
 }
 
@@ -117,6 +160,8 @@ color:rgba(104,104,104, .6);
     width:100%;
     /* margin-bottom:60px; */
     margin-right:-25px;
+    margin-bottom:50px;
+
     
 }
 
@@ -165,11 +210,11 @@ color:rgba(104,104,104, .6);
 .deseases-text{
     font-size:20px;
     margin:0px;
-    padding:0px;
+    padding:5px;
 }
 
 #blog-section{
-    height:800px;
+    /* height:800px; */
     background-color:lig;
 }
 
@@ -177,7 +222,104 @@ color:rgba(104,104,104, .6);
     background:url('../assets/blog2.png');
     background-size:contain;
     background-repeat: no-repeat;
-    height:600px;
     top:-150px;
 
+    height:500px;
+    
+
+}
+
+/* 378896ff  b712bfff */
+
+#blog-section{
+    margin-top:150px;
+}
+
+#blog-section-photo{
+    position:absolute;
+}
+
+#butterfly-photo{
+    background:url('../assets/butterfly.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    height:300px;
+    margin-bottom:40px;
+}
+
+#connection-photo{
+    background:url('../assets/connection.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    height:300px;
+    /* display:inline */
+}
+#connection-photo-text{
+    display:inline;
+    /* width:35%;
+    float:left; */
+}
+
+#cels-photo{
+    background:url('../assets/cels.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    height:400px;
+}
+
+#booking-section{
+    margin-top:150px;
+    height:700px;
+    background:linear-gradient(rgba(15, 1, 1, 0.6), rgba(10, 0, 0, 0.6)),url('../assets/booking.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+#booking-section-container{
+    height:100%;
+    background:rgba(13, 87, 92, 0.493)
+}
+
+#booking-section-row{
+height:100%;    
+}
+
+#booking-section-jumbotron{
+    background:transparent;
+    color:white;
+
+}
+
+#footer-section{
+    background: rgba(143, 14, 132, 0.1);
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:350px;
+    /* opacity:0.4; */
+    position:relative;
+}
+
+#footer{
+    background:rgba(46, 2, 53, 0.849);
+    height: 50px;
+    width:100%;
+   bottom:0;
+   left:0;
+   z-index: 100;
+   position:absolute;
+}
+
+#copyright-text{
+    color:white;
+}
+
+.block{
+    display:block;
+    color:white;
+    padding:0px;
+    margin:0px;
+    bottom:0;
 }

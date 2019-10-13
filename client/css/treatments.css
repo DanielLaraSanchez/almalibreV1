@@ -1,0 +1,152 @@
+body{
+    /* background:url('../assets/bublesbg.png');
+    background-size:contain;   */
+    font-family:'Josefin Sans';
+    font-weight: lighter;
+}
+
+
+header{
+    padding:10px 100px;
+    box-sizing:border-box;
+    background:#fff;
+    height:100px;
+
+
+}
+
+nav{
+    width:100%;
+    height:50px;
+    background:#fff;
+    border-top: 1px solid rgba(255,255,255,.2);
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    position:sticky; 
+    top:0;
+    z-index: 5;
+
+}
+
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+    float:right;
+}
+
+nav ul li {
+    list-style:none;
+}
+
+nav ul li a{
+    display:block;
+    color:rgba(0,0,0, .8);
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 50px;
+    opacity: 1;
+    transition: 0.8s;
+}
+
+a:hover {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+/* nav ul li a.active, */
+nav ul li a:hover
+{
+color:rgba(104,104,104, .6);
+}
+
+.topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav ul li a{
+        display: none;
+    }
+    .topnav ul li a.icon {
+      /* float: right; */
+      display: block;
+      font-size:25px;
+      right:0;
+      position: absolute;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .responsive  {
+        position: relative;
+        height:350px;
+    }
+    .responsive ul li a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .responsive ul{
+        display:block;
+        float:none;
+        margin-left:75px;
+        margin-top:50px;
+    }
+    .responsive ul li a {
+      /* float: none; */
+      display: block;
+      padding:2px;
+      /* text-align: left; */
+    }
+  }
+
+.photo-section{
+    height:480px;
+    background:linear-gradient(rgba(15, 1, 1, 0.7), rgba(10, 0, 0, 0.7)),url('../assets/butterfly.jpg');
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+#photo-section-container{
+    height:100%;
+}
+
+#photo-section-row{
+    height:100%;
+    width:100%;
+}
+
+#photo-section-col{
+}
+
+#photo-section-col h3{
+    color:white;
+}
+
+
+
+
+.photo-section-text{
+    font-family:'Josefin Sans';
+    font-weight: lighter;
+    color:white;
+    vertical-align: middle;
+}
+
+.col-lg-8{
+    padding:50px;
+}
+
+.items{
+    height:50px;
+}
+
+.treatment-text{
+    margin-top:50px;
+    margin-bottom:100px;
+
+}
