@@ -7,32 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alma Libre</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/treatments.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
-
-    
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="50">
     <header><img src="./assets/almalibrelogo.png" alt="" height='80'></header>
     <nav class="topnav" id="myTopnav">
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="treatments.html">Treatments</a></li>
-              <li><a href="clinics.html">Clinics</a></li>
+            <li><a href="clinics.html">Clinics</a></li>
             <li><a href="contact.html">Contact</a></li>
-           <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a></li> 
+            <li id="icon"><a  href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a></li>
         </ul>
     </nav>
 
@@ -586,7 +578,7 @@
                 console.log("inside first if", x.className)
                 x.className += " responsive";
             } else {
-                console.log("inside second if", x.className)
+                console.log("inside  if", x.className)
 
                 x.className = "topnav";
             }
