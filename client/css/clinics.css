@@ -135,3 +135,40 @@ body{
     color:white;
     vertical-align: middle;
   }
+
+
+
+
+
+  
+#footer-section{
+    background: rgba(143, 14, 132, 0.1);
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:300px;
+    /* opacity:0.4; */
+    position:relative;
+}
+
+#footer{
+    background:rgba(46, 2, 53, 0.849);
+    height: 50px;
+    width:100%;
+   bottom:0;
+   left:0;
+   z-index: 100;
+   position:absolute;
+}
+
+#copyright-text{
+    color:white;
+}
+
+.block{
+    display:block;
+    color:white;
+    padding:0px;
+    margin:0px;
+    bottom:0;
+}
