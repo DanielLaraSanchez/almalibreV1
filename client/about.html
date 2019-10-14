@@ -9,25 +9,561 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <link rel="stylesheet" href="./css/about.css">
 
 </head>
 
-<body>
+<body  data-spy="scroll" data-target="#navbar-example3" data-offset="50">
 
-
-<div class="container-fluid">
-  <div class="row" style="height:2000px;">
-    <div class="col-lg-3" style="height:300px;background:red;position:sticky;margin-top:100px;z-index:100;top:0;">
-
-    </div>
-    <div class="col-lg-9" style="height:2000px;background:grey;">
-
-    </div>
+  <header><img src="./assets/almalibrelogo.png" alt="" height='80'></header>
+  <div class="topnav" id="myTopnav">
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="clinics.html">Clinics</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a></li>
+    </ul>
   </div>
-</div>
+
+  <section class="photo-section">
+    <div class="container-fluid" id="photo-section-container">
+      <div class="row justify-content-center  align-items-center" id="photo-section-row">
+        <div class="col-lg-6 text-center" id="photo-section-col">
+          <h2 class="photo-section-text">Natural Therapies in Central Scotland</h2>
+          <h3 class="photo-section-text">We provide therapies for health and wellbeing, specialising in
+            complex chronic illnesses such as
+            Lyme disease.
+            We use primarily Biomagnetic Pair Therapy (Medical Biomagnetism) with elements of Naturopathy
+            and
+            Biodecoding.</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-2" style="height:500px;position:sticky;margin-top:100px;z-index:100;top:100px;">
+              <nav id="navbar-example3" class="navbar navbar-light bg-light">
+                  <a class="navbar-brand" href="#">Our Treatments</a>
+                  <nav class="nav nav-pills flex-column">
+                      <a class="nav-link" href="#item-1">Biomagnetic Pair</a>
+                      <nav class="nav nav-pills flex-column">
+                          <a class="nav-link ml-3 my-1" href="#item-1-1">-What is it used for?</a>
+                          <a class="nav-link ml-3 my-1" href="#item-1-2">-How is it performed?</a>
+                          <a class="nav-link ml-3 my-1" href="#item-1-3">-How was it discovered?</a>
+                          <a class="nav-link ml-3 my-1" href="#item-1-4">-How does the treatment work?</a>
+                          <a class="nav-link ml-3 my-1" href="#item-1-5">-What causes polarization within the
+                              body?</a>
+                          <a class="nav-link ml-3 my-1" href="#item-1-6">-Links and scientific studies</a>
+                      </nav>
+                      <nav class="nav nav-pills flex-column">
+                          <a class="nav-link" href="#item-2">Biodecoding</a>
+                          <a class="nav-link" href="#item-3">Naturopathy</a>
+                          <a class="nav-link" href="#item-4">Massage</a>
+                      </nav>
+                  </nav>
+              </nav>
+          </div>
+          <div class="col-lg-8">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div id="item-1" class="items"></div>
+                  </div>
+
+                  <div class="col-lg-12 treatment-text">
+
+                      <div class="row justify-content-center">
+                          <h1>Biomagnetic Pair</h1>
+
+                      </div>
+                      <div class="row justify-content-center">
+                          <div class="col-lg-2">
+                              <img src="./assets/adn.png" alt="" height="200">
+
+                          </div>
+                          <div class="col-lg-7">
+                              <h2>The Biomagnetic Pair (BMP) is a therapeutic technique developed by the Mexican
+                                  doctor and
+                                  scientist Dr. Isaac Goiz Durán. It involves the use of kinesthetic testing to detect
+                                  imbalances
+                                  in the body’s pH, and the application of magnets for therapeutic benefit and to
+                                  return the body
+                                  to homeostasis. Medical biomagnetism is a non-invasive, painless therapy, which
+                                  improves
+                                  recovery time without the side effects associated with conventional medicine.</h2>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div id="item-1-1" class="items"></div>
+                  </div>
+                  <div class="item" data-aos="fade-left">
+
+                      <div class="col-lg-12 treatment-text" style="background-color:#028280;">
+
+                          <div class="row justify-content-center">
+                              <h1>What is it used for?</h1>
+
+                          </div>
+                          <div class="row justify-content-center" style="background-color:#028280;width:100%;">
+                              <!-- <div class="col-lg-2">
+                                  <img src="./assets/human.png" alt="" height="200">
+
+                              </div> -->
+                              <div class="col-lg-9" style="background-color:#028280;color:white;">
+                                      <img src="./assets/human.png" alt="" height="200">
+
+                                  <h3>The Biomagnetic Pair technique is used worldwide as a complementary therapy for
+                                      many
+                                      ailments including chronic illnesses, infectious diseases, degenerative
+                                      conditions,
+                                      psycho-emotional and tumoral diseases, as well as poisonings. It is widely used
+                                      in
+                                      cases of Lyme disease, chronic fatigue, ME, fibromyalgia, cancer, eczema,
+                                      psoriasis,
+                                      arthritis, thyroid issues, IBS and other complex chronic illnesses. The
+                                      technique
+                                      aims to eliminate the root causes of a disease, plus any physical or energetic
+                                      imbalances that worsen it. The use of this therapy reduces clinical symptoms,
+                                      rehabilitates different functions of the body, encourages homeostasis and
+                                      reestablishes the person's health and wellbeing. The result in many cases is a
+                                      clinical improvement in the patient’s condition, without experiencing the side
+                                      effects of conventional treatments, or antimicrobial resistance, improving
+                                      overall
+                                      recovery time and rehabilitation.</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div id="item-1-2" class="items"></div>
+                  </div>
+                  <div class="item" data-aos="fade-left">
+
+                      <div class="col-lg-12 treatment-text">
+
+                          <div class="row justify-content-center">
+                              <h1>How is it performed?</h1>
+
+                          </div>
+                          <div class="row justify-content-center">
+                              <div class="col-lg-2">
+                                  <img src="./assets/adn.png" alt="" height="200">
+
+                              </div>
+                              <div class="col-lg-9">
+                                  <h2>Medical biomagnetism is a relaxing, non-invasive, painless therapy. Applied
+                                      kinesiology (a muscle test) and a magnet is used to identify areas of pH
+                                      imbalance.
+                                      Your therapist will then apply magnets to the affected areas for 15 to 20
+                                      minutes.
+
+                                      3 sessions are recommended as minimum. Chronic or degenerative conditions may
+                                      require multiple sessions. The frequency of sessions will vary for each client
+                                      but
+                                      weekly treatments followed by monthly sessions is not uncommon.
+
+                                      Ruth has trained in Medical Biomagnetism with Dr Isaac Goiz in Madrid and also
+                                      undertaken a practical course in Ibiza, where she has previously worked as a
+                                      therapist. She is able to combine her knowledge of Naturopathy, Biodecoding and
+                                      other therapeutic training to provide complete holistic advice. The first
+                                      session
+                                      can take between 1.5 hrs to 2 hrs. Follow-up sessions 1 hr to 1.5 hrs.</h2>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div id="item-1-3" class="items"></div>
+                  </div>
+                  <div class="item" data-aos="fade-left">
+
+                      <div class="col-lg-12 treatment-text">
+
+                          <div class="row justify-content-center">
+                              <h1>How was it discovered?</h1>
+
+                          </div>
+                          <div class="row justify-content-center">
+                              <div class="col-lg-2">
+                                  <img src="./assets/adn.png" alt="" height="200">
+
+                              </div>
+                              <div class="col-lg-9">
+                                  <h2>Dr. Broeringmeyer, a Chief Medical Officer with NASA, noticed a difference in
+                                      the
+                                      right and left leg lengths when astronauts returned to Earth after missions into
+                                      space. He theorised it was due to being away from the Earth's magnetic field,
+                                      and
+                                      discovered that the astronauts' legs returned to normal after the application of
+                                      magnets to their bodies. Dr. Goiz later developed this as a form of therapy
+                                      through
+                                      many hours of investigation with his patients (primarily AIDS patients) after
+                                      hearing Dr. Broeringmeyer speak at a session about Bioenergy, and went on to
+                                      discover over 350 magnetic pairs, each relating to a different illness.</h2>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div id="item-1-4" class="items"></div>
+                  </div>
+                  <div class="item" data-aos="fade-left">
+
+                      <div class="col-lg-12 treatment-text">
+
+                          <div class="row justify-content-center">
+                              <h1>How does BMP treatment work?</h1>
+
+                          </div>
+                          <div class="row justify-content-center">
+                              <div class="col-lg-2">
+                                  <img src="./assets/adn.png" alt="" height="200">
+
+                              </div>
+                              <div class="col-lg-9">
+                                  <h2>In the seminar which Dr Goiz attended, Dr. Broeringmeyer taught that organs and
+                                      tissues in the body can become magnetically polarized, negatively or positively,
+                                      and
+                                      explained his technique to locate magnetic polarizations using applied
+                                      kinesiology.
+                                      Applied kinesiology is an alternative medicine method of diagnosis and treatment
+                                      based on muscle strength testing. Its premise is that muscles have specific
+                                      relationships with organs and glands and therefore weakness in a specific muscle
+                                      is
+                                      an indicator of a problem in the associated organ or gland. Proponents of
+                                      applied
+                                      kinesiology contend that healing that muscle weakness will also heal the problem
+                                      in
+                                      the associated organ or gland. Dr. Broeringmeyer found polarizations in the body
+                                      by
+                                      looking for changes in muscle strength. He then applied a magnet to the
+                                      polarized
+                                      area, to cause depolarization, thus returning the area to it's correct healthy
+                                      magnetic charge.</h2>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div id="item-1-5" class="items"></div>
+                  </div>
+                  <div class="item" data-aos="fade-left">
+
+                      <div class="col-lg-12 treatment-text">
+
+                          <div class="row justify-content-center">
+                              <h1>What causes polarization within the body?</h1>
+
+                          </div>
+                          <div class="row justify-content-center">
+                              <div class="col-lg-2">
+                                  <img src="./assets/adn.png" alt="" height="200">
+
+                              </div>
+                              <div class="col-lg-9">
+                                  <h2>The therapy is based on the premise that the presence of pathogens is the reason
+                                      for
+                                      the polarisation of an area, as they require a certain altered pH for survival.
+                                      There are also 'emotional' points where the area is said to have polarised due
+                                      to
+                                      emotional energy. Dr Goiz does not focus too much on why the area became
+                                      polarised,
+                                      knowing that since the affected areas can be located and corrected there is no
+                                      need
+                                      for further investigation. However factors such as physical injury, emotional
+                                      trauma
+                                      and electromagnetic interference are suggested. It is also suggested that the
+                                      pathogen can only be present in an area that is predisposed or already
+                                      polarised, so
+                                      the question is, what changes the pH before the pathogen sets up home?
+
+                                      Emotional energy is becoming an ever-more discussed topic as playing a role in
+                                      disease. Therapies such as Biodecoding and Bioneuroemotion state that suppressed
+                                      emotions from a long standing conflict or traumatic experience carry an
+                                      electrical
+                                      charge, this energy is thought to be able to polarise or weaken different areas
+                                      of
+                                      the body, depending on the nature of the conflict or emotion. Biomagnetic pair
+                                      therapy would help to return the tissue back to a healthy pH, releasing the
+                                      stuck
+                                      emotional energy. There are even suggestions that certain pathogens resonate
+                                      with
+                                      certain emotions. This seems especially true in the case of Lyme disease, where
+                                      the
+                                      line between PTSD symptoms and Lyme symptoms is often blurred.</h2>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div id="item-1-6" class="items"></div>
+                  </div>
+                  <div class="item" data-aos="fade-left">
+
+                      <div class="col-lg-12 treatment-text">
+
+                          <div class="row justify-content-center">
+                              <h1>Links and scientific studies</h1>
+
+                          </div>
+                          <div class="row justify-content-center">
+                              <div class="col-lg-2">
+                                  <img src="./assets/adn.png" alt="" height="200">
+
+                              </div>
+                              <div class="col-lg-9">
+                                  <h2>Biomagnetic Pair and typhoid
+                                      fever-https://www.liebertpub.com/doi/abs/10.1089/acu.2017.1253?fbclid=IwAR3wT99aUHbjXljlB3epVE1CDlPdAjv46oAeaqs_OaC29TuOxxp6C2kseFM&
+
+                                      Biomagnetic Pair and urinary tract
+                                      infection-https://goizbiomagnetism.com/en/treating-urinary-tract-infections-with-biomagnetic-pairs/
+
+                                      Many links to studies and reports on the therapeutic use of
+                                      magnets-https://biomagneticpair.wordpress.com/research/
+
+                                      Biomagnetic Pair Therapy/ Medical Biomagnetism is practiced widely across the
+                                      world
+                                      and is now available with Ruth Bell in Edinburgh and Fife, Scotland.</h2>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12">
+
+                      <div id="item-2" class="items"></div>
+                  </div>
+                  <div class="item" data-aos="fade-left">
+
+                      <div class="col-lg-12 treatment-text">
+
+                          <div class="row justify-content-center">
+                              <h1>Biodecoding</h1>
+
+                          </div>
+                          <div class="row justify-content-center">
+                              <div class="col-lg-2">
+                                  <img src="./assets/adn.png" alt="" height="200">
+
+                              </div>
+                              <div class="col-lg-9">
+                                  <h4>The therapy technique Biodecoding, or Bioneuroemotion, works on the theory that
+                                      physical symptoms are often an expression of a suppressed or unconscious
+                                      emotion.
+
+                                      An unresolved traumatic event can cause trapped emotions, which contain energy,
+                                      and
+                                      a deep-rooted belief about yourself or the world, and a set of thoughts which
+                                      maintain the belief and the emotion.
+
+                                      Over time, the energy held by the emotion inside your body affects your physical
+                                      health, creating symptoms that can be decoded.
+
+                                      Also, the long-term repetition of such thoughts affects your perception of the
+                                      world, seeing only evidence to support your belief.
+
+                                      Changing a belief starts with releasing the emotion connected to the trauma.
+
+                                      A physical symptom that has arisen, can in turn influence your feelings and
+                                      emotions, which perpetuates the whole thing, and there are even theories about
+                                      pathogens resonating with certain emotions.
+
+                                      This further shows the need for a multi-layered approach to healing to find the
+                                      root, release the emotion, retrain the thoughts and break the cycle.
+
+                                      Toxic emotions are just as harmful as toxic food, toxic thoughts or toxic
+                                      pathogens.
+
+                                      New studies in Epigenetics are also showing how emotional trauma can be passed
+                                      down
+                                      genetically, so what you are processing now, may not even be your own. Our
+                                      generation may have inherited traumas which our grandparents or ancestors were
+                                      not
+                                      in a position to overcome.
+
+                                      The theory of emotional energy causing physical symptoms has it's foundations in
+                                      Dr
+                                      Hamer's 'German New Medicine' and these ideas were later developed into
+                                      therapeutic
+                                      techniques by Enric Corbera (Bioneuroemotion) and Christian Fleche
+                                      (Biodecoding).
+
+                                      Ruth has studied Bioneuroemotion in Barcelona with Enric Corbera and online with
+                                      Marie Boularand and Christian Fleche.</h4>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div id="item-3" class="items"></div>
+                  </div>
+                  <div class="item" data-aos="fade-left">
+
+                      <div class="col-lg-12 treatment-text">
+
+                          <div class="row justify-content-center">
+                              <h1>Naturopathy</h1>
+
+                          </div>
+                          <div class="row justify-content-center">
+                              <div class="col-lg-2">
+                                  <img src="./assets/adn.png" alt="" height="200">
+
+                              </div>
+                              <div class="col-lg-9">
+                                  <h4>Naturopathy is the use of various natural treatments and therapies to support
+                                      the
+                                      body in healing itself.
+
+                                      Any illness is a two sided coin. A disease can only affect a body or organ that
+                                      is
+                                      somehow weakened, whether physically, or energetically.
+
+                                      The body is the environment, that allows for the disease. Like a cake mould and
+                                      the
+                                      cake. Specific conditions in the environment allow for specific diseases to
+                                      arise.
+
+                                      Therefore healing is also a two sided coin, using treatments and techniques to
+                                      heal
+                                      the environment, and on the other hand, tackle the pathogens causing the
+                                      disease.
+                                      Naturopathy puts the emphasis on the former, reducing the need for the latter.
+
+                                      It involves a holistic view of all the symptoms a person has, whether physical
+                                      or
+                                      psycho-emotional, and suggesting natural treatments to improve their all-round
+                                      health and well-being.
+
+                                      This may include advice on herbal medicine, supplements, external environmental
+                                      factors, diet, lifestyle changes, massage, reflexology points, acupressure
+                                      points,
+                                      homeopathy, emotional release, examining core beliefs and thought patterns,
+                                      exercise, breathing techniques, aromatherapy and so on.
+
+                                      Though many of these factors may not be the cause of the current illness, they
+                                      all
+                                      contribute to how the body is going to heal.
+
+                                      Herbal medicine and aromatherapy can work on both physical factors and emotional
+                                      ones at the same time, and also affect your thoughts. Eg. One essential oil can
+                                      be
+                                      antiviral and anti-inflammatory, while also being calming, relaxing your nervous
+                                      system and your body, interrupting a panic attack or a negative thought cycle.
+
+                                      In Central America the metaphysical side of plant medicine is also taken into
+                                      consideration, not just the chemical components. This multi-layered effect is
+                                      possibly what makes herbal medicine work better for some people than modern
+                                      'allopathic' medicine, however modern medicine definitely has its place too.
+
+                                      Naturopathy not only looks at alternative medicine, but also how the client has
+                                      become unwell, and therefore the steps involved in allowing healing to now take
+                                      place. Generally a little advice will be combined with the magnet therapy or
+                                      focused
+                                      on in a separate session for a more complete consultation.</h4>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div id="item-4" class="items"></div>
+                  </div>
+                  <div class="item" data-aos="fade-left">
+
+                      <div class="col-lg-12 treatment-text">
+
+                          <div class="row justify-content-center">
+                              <h1>Massage</h1>
+
+                          </div>
+                          <div class="row justify-content-center">
+                              <div class="col-lg-2">
+                                  <img src="./assets/adn.png" alt="" height="200">
+
+                              </div>
+                              <div class="col-lg-9">
+                                  <h3>Eastern Body Massage
+
+                                      Therapeutic massage has been used for thousands of years and is known to benefit
+                                      physical, mental, and emotional health, alleviating stress, releasing muscle
+                                      tension
+                                      and energetic blockages.
+
+                                      Eastern Body Massage uses a wide range of massaging techniques, anatomy
+                                      knowledge
+                                      and intuition to provide the maximum holistic health benefits.
+
+                                      Massage can increase our overall energy levels and mental performance both
+                                      through
+                                      disintoxication and nerve stimulation. It is therefore beneficial not only for
+                                      stress relief, or muscle pain, but to aid healing from many illnesses.
+
+                                      It encourages the body to heal itself and has been shown to reduce anxiety and
+                                      behavioural problems, increase immunity to illness, promote mental well-being,
+                                      alleviate depression, improve our ability to relate to others, and also
+                                      generates
+                                      oxytocin, giving feelings of love.
+
+                                      Whether you suffer from work-related stress, chronic illness or just want to
+                                      treat
+                                      yourself, a massage is like taking a small holiday.
+
+                                      Treatment time can be 45 mins, 1hr or 1.5hr.</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
 
 
+
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+  <script>
+      function myFunction() {
+          console.log("funciona")
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+  x.className += " responsive";
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+} else {
+  x.className = "topnav";
+}
+}
+  </script>
 </body>
 
 </html>

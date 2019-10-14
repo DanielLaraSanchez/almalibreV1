@@ -2,32 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alma Libre</title>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/treatments.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example3" data-offset="50">
+
     <header><img src="./assets/almalibrelogo.png" alt="" height='80'></header>
-    <nav class="topnav" id="myTopnav">
+    <div class="topnav" id="myTopnav">
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="treatments.html">Treatments</a></li>
             <li><a href="clinics.html">Clinics</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li id="icon"><a  href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a></li>
         </ul>
-    </nav>
-
+    </div>
 
     <section class="photo-section">
         <div class="container-fluid" id="photo-section-container">
@@ -47,15 +53,16 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2" style="height:500px;position:sticky;margin-top:100px;z-index:100;top:100px;">
+            <div class="col-lg-2" id="scrollspy-menu">
                 <nav id="navbar-example3" class="navbar navbar-light bg-light">
                     <a class="navbar-brand" href="#">Our Treatments</a>
                     <nav class="nav nav-pills flex-column">
                         <a class="nav-link" href="#item-1">Biomagnetic Pair</a>
                         <nav class="nav nav-pills flex-column">
                             <a class="nav-link ml-3 my-1" href="#item-1-1">-What is it used for?</a>
-                            <a class="nav-link ml-3 my-1" href="#item-1-2">-How is it performed?</a>
                             <a class="nav-link ml-3 my-1" href="#item-1-3">-How was it discovered?</a>
+
+                            <a class="nav-link ml-3 my-1" href="#item-1-2">-How is it performed?</a>
                             <a class="nav-link ml-3 my-1" href="#item-1-4">-How does the treatment work?</a>
                             <a class="nav-link ml-3 my-1" href="#item-1-5">-What causes polarization within the
                                 body?</a>
@@ -70,21 +77,17 @@
                 </nav>
             </div>
             <div class="col-lg-8">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-lg-12">
                         <div id="item-1" class="items"></div>
                     </div>
-
                     <div class="col-lg-12 treatment-text">
-
                         <div class="row justify-content-center">
                             <h1>Biomagnetic Pair</h1>
-
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-lg-2">
                                 <img src="./assets/adn.png" alt="" height="200">
-
                             </div>
                             <div class="col-lg-7">
                                 <h2>The Biomagnetic Pair (BMP) is a therapeutic technique developed by the Mexican
@@ -98,7 +101,6 @@
                                     recovery time without the side effects associated with conventional medicine.</h2>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="row">
@@ -106,80 +108,70 @@
                         <div id="item-1-1" class="items"></div>
                     </div>
                     <div class="item" data-aos="fade-left">
-
                         <div class="col-lg-12 treatment-text" style="background-color:#028280;">
-
                             <div class="row justify-content-center">
-                                <h1>What is it used for?</h1>
+                                <h1 style="color:white;padding:30px;">What is it used for?</h1>
+
+                            </div>
+                            <div class="row justify-content-center">
+                                <img src="./assets/human.png" alt="" height="200">
 
                             </div>
                             <div class="row justify-content-center" style="background-color:#028280;width:100%;">
-                                <!-- <div class="col-lg-2">
-                                    <img src="./assets/human.png" alt="" height="200">
+                                <div class="col-lg-9 treatment-text-col">
+                                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <h3 class="text-center">The Biomagnetic Pair technique is used worldwide
+                                                    as a complementary therapy for
+                                                    many
+                                                    ailments including chronic illnesses, infectious diseases,
+                                                    degenerative
+                                                    conditions,
+                                                    psycho-emotional and tumoral diseases, as well as poisonings. It is
+                                                    widely used
+                                                    in
+                                                    cases of Lyme disease, chronic fatigue, ME, fibromyalgia, cancer,
+                                                    eczema,
+                                                    psoriasis,
+                                                    arthritis, thyroid issues, IBS and other complex chronic illnesses.
+                                                </h3>
+                                                <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                                            </div>
+                                            <div class="carousel-item">
+                                                <h3 class="text-center">
+                                                    The
+                                                    technique
+                                                    aims to eliminate the root causes of a disease, plus any physical or
+                                                    energetic
+                                                    imbalances that worsen it. The use of this therapy reduces clinical
+                                                    symptoms,
+                                                    rehabilitates different functions of the body, encourages
+                                                    homeostasis and
+                                                    reestablishes the person's health and wellbeing. The result in many
+                                                    cases is a
+                                                    clinical improvement in the patient’s condition, without
+                                                    experiencing the side
+                                                    effects of conventional treatments, or antimicrobial resistance,
+                                                    improving
+                                                    overall
+                                                    recovery time and rehabilitation.
+                                                </h3>
+                                            </div>
 
-                                </div> -->
-                                <div class="col-lg-9" style="background-color:#028280;color:white;">
-                                        <img src="./assets/human.png" alt="" height="200">
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                            data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                            data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
 
-                                    <h3>The Biomagnetic Pair technique is used worldwide as a complementary therapy for
-                                        many
-                                        ailments including chronic illnesses, infectious diseases, degenerative
-                                        conditions,
-                                        psycho-emotional and tumoral diseases, as well as poisonings. It is widely used
-                                        in
-                                        cases of Lyme disease, chronic fatigue, ME, fibromyalgia, cancer, eczema,
-                                        psoriasis,
-                                        arthritis, thyroid issues, IBS and other complex chronic illnesses. The
-                                        technique
-                                        aims to eliminate the root causes of a disease, plus any physical or energetic
-                                        imbalances that worsen it. The use of this therapy reduces clinical symptoms,
-                                        rehabilitates different functions of the body, encourages homeostasis and
-                                        reestablishes the person's health and wellbeing. The result in many cases is a
-                                        clinical improvement in the patient’s condition, without experiencing the side
-                                        effects of conventional treatments, or antimicrobial resistance, improving
-                                        overall
-                                        recovery time and rehabilitation.</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div id="item-1-2" class="items"></div>
-                    </div>
-                    <div class="item" data-aos="fade-left">
-
-                        <div class="col-lg-12 treatment-text">
-
-                            <div class="row justify-content-center">
-                                <h1>How is it performed?</h1>
-
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-lg-2">
-                                    <img src="./assets/adn.png" alt="" height="200">
-
-                                </div>
-                                <div class="col-lg-9">
-                                    <h2>Medical biomagnetism is a relaxing, non-invasive, painless therapy. Applied
-                                        kinesiology (a muscle test) and a magnet is used to identify areas of pH
-                                        imbalance.
-                                        Your therapist will then apply magnets to the affected areas for 15 to 20
-                                        minutes.
-
-                                        3 sessions are recommended as minimum. Chronic or degenerative conditions may
-                                        require multiple sessions. The frequency of sessions will vary for each client
-                                        but
-                                        weekly treatments followed by monthly sessions is not uncommon.
-
-                                        Ruth has trained in Medical Biomagnetism with Dr Isaac Goiz in Madrid and also
-                                        undertaken a practical course in Ibiza, where she has previously worked as a
-                                        therapist. She is able to combine her knowledge of Naturopathy, Biodecoding and
-                                        other therapeutic training to provide complete holistic advice. The first
-                                        session
-                                        can take between 1.5 hrs to 2 hrs. Follow-up sessions 1 hr to 1.5 hrs.</h2>
                                 </div>
                             </div>
                         </div>
@@ -190,19 +182,12 @@
                         <div id="item-1-3" class="items"></div>
                     </div>
                     <div class="item" data-aos="fade-left">
-
                         <div class="col-lg-12 treatment-text">
-
                             <div class="row justify-content-center">
                                 <h1>How was it discovered?</h1>
-
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-lg-2">
-                                    <img src="./assets/adn.png" alt="" height="200">
-
-                                </div>
-                                <div class="col-lg-9">
+                                <div class="col-lg-9 text-center">
                                     <h2>Dr. Broeringmeyer, a Chief Medical Officer with NASA, noticed a difference in
                                         the
                                         right and left leg lengths when astronauts returned to Earth after missions into
@@ -219,24 +204,78 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="item-1-1" class="items"></div>
+                    </div>
+                    <div class="col-lg-12 treatment-text" style="background-color:#028280;">
+                        <div class="row justify-content-center">
+                            <h1 style="color:white;padding:30px;">How was it discovered?</h1>
+
+                        </div>
+                        <div class="row justify-content-center">
+                            <img src="./assets/human.png" alt="" height="200">
+
+                        </div>
+                        <div class="row justify-content-center" style="background-color:#028280;width:100%;">
+                            <div class="col-lg-9 treatment-text-col">
+                                <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <h3 class="text-center">Medical biomagnetism is a relaxing,
+                                                non-invasive, painless therapy. Applied kinesiology (a muscle test)
+                                                and a magnet is used to identify areas of pH imbalance. Your
+                                                therapist will then apply magnets to the affected areas for 15 to 20
+                                                minutes.
+
+                                                3 sessions are recommended as minimum. Chronic or degenerative
+                                                conditions may require multiple sessions. The frequency of sessions
+                                                will vary for each client but weekly treatments followed by monthly
+                                                sessions is not uncommon.
+                                            </h3>
+                                            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                                        </div>
+                                        <div class="carousel-item">
+                                            <h3 class="text-center">
+                                                Ruth has trained in Medical Biomagnetism with Dr Isaac Goiz in
+                                                Madrid and also undertaken a practical course in Ibiza, where she
+                                                has previously worked as a therapist. She is able to combine her
+                                                knowledge of Naturopathy, Biodecoding and other therapeutic training
+                                                to provide complete holistic advice. The first session can take
+                                                between 1.5 hrs to 2 hrs. Follow-up sessions 1 hr to 1.5 hrs.
+                                            </h3>
+                                        </div>
+
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-lg-12">
                         <div id="item-1-4" class="items"></div>
                     </div>
                     <div class="item" data-aos="fade-left">
-
                         <div class="col-lg-12 treatment-text">
-
                             <div class="row justify-content-center">
                                 <h1>How does BMP treatment work?</h1>
-
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-lg-2">
-                                    <img src="./assets/adn.png" alt="" height="200">
-
-                                </div>
-                                <div class="col-lg-9">
+                                <div class="col-lg-9 text-center">
                                     <h2>In the seminar which Dr Goiz attended, Dr. Broeringmeyer taught that organs and
                                         tissues in the body can become magnetically polarized, negatively or positively,
                                         and
@@ -263,83 +302,98 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div id="item-1-5" class="items"></div>
+                        <div id="item-1-1" class="items"></div>
                     </div>
-                    <div class="item" data-aos="fade-left">
+                    <div class="col-lg-12 treatment-text" style="background-color:#028280;">
+                        <div class="row justify-content-center">
+                            <h1 style="color:white;padding:30px;">What causes polarization within the body?</h1>
 
-                        <div class="col-lg-12 treatment-text">
+                        </div>
+                        <div class="row justify-content-center">
+                            <img src="./assets/human.png" alt="" height="200">
 
-                            <div class="row justify-content-center">
-                                <h1>What causes polarization within the body?</h1>
+                        </div>
+                        <div class="row justify-content-center" style="background-color:#028280;width:100%;">
+                            <div class="col-lg-9 treatment-text-col">
+                                <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <h3 class="text-center">The therapy is based on the premise that the
+                                                presence of pathogens is the reason for the polarisation of an area, as
+                                                they require a certain altered pH for survival. There are also
+                                                'emotional' points where the area is said to have polarised due to
+                                                emotional energy. Dr Goiz does not focus too much on why the area became
+                                                polarised, knowing that since the affected areas can be located and
+                                                corrected there is no need for further investigation.
+                                            </h3>
+                                            <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                                        </div>
+                                        <div class="carousel-item">
+                                            <h3 class="text-center">
+                                                However factors such as physical injury, emotional trauma and
+                                                electromagnetic interference are suggested. It is also suggested that
+                                                the pathogen can only be present in an area that is predisposed or
+                                                already polarised, so the question is, what changes the pH before the
+                                                pathogen sets up home? Emotional energy is becoming an ever-more
+                                                discussed topic as playing a role in disease.
+                                            </h3>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <h3 class="text-center">
+                                                Therapies such as Biodecoding and Bioneuroemotion state that suppressed
+                                                emotions from a long standing conflict or traumatic experience carry an
+                                                electrical charge, this energy is thought to be able to polarise or
+                                                weaken different areas of the body, depending on the nature of the
+                                                conflict or emotion. Biomagnetic pair therapy would help to return the
+                                                tissue back to a healthy pH, releasing the stuck emotional energy. There
+                                                are even suggestions that certain pathogens resonate with certain
+                                                emotions. This seems especially true in the case of Lyme disease, where
+                                                the line between PTSD symptoms and Lyme symptoms is often blurred.
+                                            </h3>
+                                        </div>
 
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-lg-2">
-                                    <img src="./assets/adn.png" alt="" height="200">
-
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls3" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls3" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
                                 </div>
-                                <div class="col-lg-9">
-                                    <h2>The therapy is based on the premise that the presence of pathogens is the reason
-                                        for
-                                        the polarisation of an area, as they require a certain altered pH for survival.
-                                        There are also 'emotional' points where the area is said to have polarised due
-                                        to
-                                        emotional energy. Dr Goiz does not focus too much on why the area became
-                                        polarised,
-                                        knowing that since the affected areas can be located and corrected there is no
-                                        need
-                                        for further investigation. However factors such as physical injury, emotional
-                                        trauma
-                                        and electromagnetic interference are suggested. It is also suggested that the
-                                        pathogen can only be present in an area that is predisposed or already
-                                        polarised, so
-                                        the question is, what changes the pH before the pathogen sets up home?
 
-                                        Emotional energy is becoming an ever-more discussed topic as playing a role in
-                                        disease. Therapies such as Biodecoding and Bioneuroemotion state that suppressed
-                                        emotions from a long standing conflict or traumatic experience carry an
-                                        electrical
-                                        charge, this energy is thought to be able to polarise or weaken different areas
-                                        of
-                                        the body, depending on the nature of the conflict or emotion. Biomagnetic pair
-                                        therapy would help to return the tissue back to a healthy pH, releasing the
-                                        stuck
-                                        emotional energy. There are even suggestions that certain pathogens resonate
-                                        with
-                                        certain emotions. This seems especially true in the case of Lyme disease, where
-                                        the
-                                        line between PTSD symptoms and Lyme symptoms is often blurred.</h2>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-lg-12">
                         <div id="item-1-6" class="items"></div>
                     </div>
                     <div class="item" data-aos="fade-left">
-
                         <div class="col-lg-12 treatment-text">
-
                             <div class="row justify-content-center">
                                 <h1>Links and scientific studies</h1>
-
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-lg-2">
-                                    <img src="./assets/adn.png" alt="" height="200">
 
-                                </div>
                                 <div class="col-lg-9">
-                                    <h2>Biomagnetic Pair and typhoid
-                                        fever-https://www.liebertpub.com/doi/abs/10.1089/acu.2017.1253?fbclid=IwAR3wT99aUHbjXljlB3epVE1CDlPdAjv46oAeaqs_OaC29TuOxxp6C2kseFM&
+                                    <h2>
+                                        <a
+                                            href="https://www.liebertpub.com/doi/abs/10.1089/acu.2017.1253?fbclid=IwAR3wT99aUHbjXljlB3epVE1CDlPdAjv46oAeaqs_OaC29TuOxxp6C2kseFM&">Biomagnetic
+                                            Pair and typhoid fever-</a>
+                                        <br><a
+                                            href="https://goizbiomagnetism.com/en/treating-urinary-tract-infections-with-biomagnetic-pairs/">Biomagnetic
+                                            Pair and urinary tract
+                                            infection-</a>
+                                        <br> <a href="https://biomagneticpair.wordpress.com/research/">Many links to
+                                            studies and reports on the therapeutic use of
+                                            magnets-</a>
 
-                                        Biomagnetic Pair and urinary tract
-                                        infection-https://goizbiomagnetism.com/en/treating-urinary-tract-infections-with-biomagnetic-pairs/
-
-                                        Many links to studies and reports on the therapeutic use of
-                                        magnets-https://biomagneticpair.wordpress.com/research/
 
                                         Biomagnetic Pair Therapy/ Medical Biomagnetism is practiced widely across the
                                         world
@@ -351,22 +405,15 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-
                         <div id="item-2" class="items"></div>
                     </div>
                     <div class="item" data-aos="fade-left">
-
                         <div class="col-lg-12 treatment-text">
-
                             <div class="row justify-content-center">
                                 <h1>Biodecoding</h1>
-
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-lg-2">
-                                    <img src="./assets/adn.png" alt="" height="200">
 
-                                </div>
                                 <div class="col-lg-9">
                                     <h4>The therapy technique Biodecoding, or Bioneuroemotion, works on the theory that
                                         physical symptoms are often an expression of a suppressed or unconscious
@@ -421,17 +468,13 @@
                         <div id="item-3" class="items"></div>
                     </div>
                     <div class="item" data-aos="fade-left">
-
                         <div class="col-lg-12 treatment-text">
-
                             <div class="row justify-content-center">
                                 <h1>Naturopathy</h1>
-
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-lg-2">
                                     <img src="./assets/adn.png" alt="" height="200">
-
                                 </div>
                                 <div class="col-lg-9">
                                     <h4>Naturopathy is the use of various natural treatments and therapies to support
@@ -494,17 +537,13 @@
                         <div id="item-4" class="items"></div>
                     </div>
                     <div class="item" data-aos="fade-left">
-
                         <div class="col-lg-12 treatment-text">
-
                             <div class="row justify-content-center">
                                 <h1>Massage</h1>
-
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-lg-2">
                                     <img src="./assets/adn.png" alt="" height="200">
-
                                 </div>
                                 <div class="col-lg-9">
                                     <h3>Eastern Body Massage
@@ -547,17 +586,6 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -571,22 +599,18 @@
     <script>
         AOS.init();
     </script>
-
     <script>
         function myFunction() {
             console.log("funciona")
             var x = document.getElementById("myTopnav");
             if (x.className === "topnav") {
-                console.log("inside first if", x.className)
                 x.className += " responsive";
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             } else {
-                console.log("inside  if", x.className)
-
                 x.className = "topnav";
             }
         }
     </script>
-
 </body>
 
 </html>
