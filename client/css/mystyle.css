@@ -7,10 +7,11 @@ body{
 
 
 header{
-    padding:10px 100px;
+    padding:20px 100px;
+    margin-top:20px;
     box-sizing:border-box;
     background:#fff;
-    height:100px;
+    height:150px;
 
 
 }
@@ -24,9 +25,39 @@ nav{
     position:sticky; 
     top:0;
     z-index: 5;
+    transition: background-color 0.2s ease;
+
 
 }
 
+nav.scroll {
+    background-color: rgba(44, 129, 118, 0.9);
+    color: #eef;
+  }
+
+  #logoDiv{
+      position:absolute;
+      left: 210px;
+      opacity:0;
+      padding-top:4px;
+
+  }
+
+  #logoDiv.scroll{
+    animation: fadeIn 1s;
+    /* animation-delay: 5s; */
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    from{left:210px;}
+    to{left:190px;}
+}
+  
+  nav.scroll ul li a {
+    color: #eef;
+  }
 
 nav ul {
     display: flex;

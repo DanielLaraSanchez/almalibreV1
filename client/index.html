@@ -24,7 +24,11 @@
     
     <header><img src="./assets/almalibrelogo.png" alt="" height='80'></header>
     <nav class="topnav" id="myTopnav">
+      
         <ul>
+                <div id="logoDiv">
+                        <img src="./assets/logoafter.png" alt="" height="40">
+                    </div>
              <li><a href="index.html" class="active">Home</a></li>
       <li><a href="treatments.html">Treatments</a></li>
       <li><a href="clinics.html">Clinics</a></li>
@@ -323,6 +327,22 @@
   }
 }
     </script>
+
+
+<script>
+window.onscroll = () => {
+  const nav = document.getElementById('myTopnav');
+  const logo = document.getElementById('logoDiv')
+  if(this.scrollY <= 100){
+    nav.className = 'topnav';
+    logo.className = '';
+  }  else {
+    nav.className += ' scroll';
+    logo.className += ' scroll';
+  }
+};
+
+</script>
 
 </body>
 
