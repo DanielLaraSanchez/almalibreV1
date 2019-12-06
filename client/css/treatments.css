@@ -160,7 +160,10 @@ body{
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #6631aa;
+    background-color: #028280;
+}
+.nav-pills a {
+    color:rgb(94, 54, 102);
 }
 
 .carousel-control-next {
